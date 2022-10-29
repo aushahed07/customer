@@ -1,0 +1,36 @@
+2022-10-29 23:28:42.662  INFO 76872 --- [main] com.shahed.customer.CustomerApplication  : Starting CustomerApplication using Java 1.8.0_251 on shahed-personal with PID 76872 (/home/shahed/IdeaProjects/customer/target/classes started by shahed in /home/shahed/IdeaProjects/customer)
+2022-10-29 23:28:42.665  INFO 76872 --- [main] com.shahed.customer.CustomerApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-10-29 23:28:43.300  INFO 76872 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-29 23:28:43.301  INFO 76872 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-10-29 23:28:43.323  INFO 76872 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.shahed.customer.repository.CustomerRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-10-29 23:28:43.324  INFO 76872 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 0 JDBC repository interfaces.
+2022-10-29 23:28:43.332  INFO 76872 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-29 23:28:43.332  INFO 76872 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-29 23:28:43.357  INFO 76872 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 1 JPA repository interfaces.
+2022-10-29 23:28:43.752  INFO 76872 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-29 23:28:43.758  INFO 76872 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-29 23:28:43.759  INFO 76872 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-10-29 23:28:43.865  INFO 76872 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-29 23:28:43.865  INFO 76872 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1138 ms
+2022-10-29 23:28:44.009  INFO 76872 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-29 23:28:44.043  INFO 76872 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-10-29 23:28:44.244  INFO 76872 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-29 23:28:44.324  INFO 76872 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-29 23:28:44.597  INFO 76872 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-29 23:28:44.611  INFO 76872 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-10-29 23:28:45.038  INFO 76872 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-29 23:28:45.045  INFO 76872 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-29 23:28:45.321  WARN 76872 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-29 23:28:45.648  INFO 76872 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-29 23:28:45.657  INFO 76872 --- [main] com.shahed.customer.CustomerApplication  : Started CustomerApplication in 3.402 seconds (JVM running for 3.896)
+2022-10-29 23:29:01.073  INFO 76872 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-29 23:29:01.074  INFO 76872 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-29 23:29:01.075  INFO 76872 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-29 23:29:01.991  INFO 76872 --- [http-nio-8080-exec-1] c.s.c.controller.CustomerController      : Request for customer information store.
+2022-10-29 23:29:01.995  INFO 76872 --- [customer_1] c.s.c.service.impl.CustomerServiceImpl   : Saving file: 1M-customers.txt , Thread: customer_1
+2022-10-29 23:29:54.213  INFO 76872 --- [customer_1] c.s.c.service.impl.CustomerServiceImpl   : File '1M-customers.txt' storing time: 0 minutes and 19 seconds
+2022-10-29 23:29:54.214  INFO 76872 --- [customer_1] c.s.c.service.impl.CustomerServiceImpl   : File '1M-customers.txt' processing time: 0 minutes and 52 seconds
+2022-10-29 23:29:54.214  INFO 76872 --- [http-nio-8080-exec-1] c.s.c.controller.CustomerController      : Total processing time: 0 minutes and 52 seconds
+2022-10-29 23:31:21.996  INFO 76872 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-29 23:31:21.998  INFO 76872 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-29 23:31:22.001  INFO 76872 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
